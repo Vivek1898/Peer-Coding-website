@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET user listing. */
 router.get('/1', function(req, res, next) {
   res.send('just text');
 });
