@@ -13,7 +13,9 @@ var userSchema=new mongoose.Schema({
     },
     //Encrypted passwords
     hash:String,
-    salt:String
+    salt:String,
+    faceBookId:String,
+    googleId:String
 });
 
 //Making pwd Secure
