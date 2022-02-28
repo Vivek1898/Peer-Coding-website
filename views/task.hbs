@@ -6,7 +6,7 @@
     <div class="col-md-4" id="chatbox">
 <div class="panel panel-primary">
     <div class="panel-heading">
-     CHAT ROOM 
+     CHAT ROOM  
      <span class="pull-right" id="chatbox-username">
          {{#if user}}
             {{user.name}}
@@ -15,7 +15,7 @@
      </span>
     </div>
     <div class="panel-body">
-        <ul class="media-list" style="height: 30px; overflow-y:scroll" id="chatbox-listMessages"></ul>
+        <ul class="media-list" style="height: 150px; overflow-y:scroll" id="chatbox-listMessages"></ul>
     </div>
     <div class="panel-footer">
         <div class="input-group">
@@ -32,6 +32,8 @@
 </div>
 
 </div>
+
+<input type="hidden" value="{{roomId}}" id="roomId">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js" integrity="sha512-xwrAU5yhWwdTvvmMNheFn9IyuDbl/Kyghz2J3wQRDR8tyNmT8ZIYOd0V3iPYY/g4XdNPy0n/g0NvqGu9f0fPJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
@@ -54,6 +56,8 @@ if(username==""){
     $("#chatbox-username").text(username);
 
 };
+var roomId=$('#roomId').val();
+socket.emit('joinRoom',{room:roomId})
 
  var userMessage = function(name, text) {
     return ('<li class="media"> <div class="media-body"> <div class="media">' +
