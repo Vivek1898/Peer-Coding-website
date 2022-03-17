@@ -8,6 +8,9 @@ CSS
 JAVASCRIPT
 SocetIo
 ICS config
+DB-MONGODB
+Auth-PassportJs + Oauth Google
+Nodemailer
 </pre>
 
 
