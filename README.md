@@ -1,5 +1,8 @@
 # Platform For Peer Coding!
 
+
+<a href="https://pure-badlands-65740.herokuapp.com/">Live Demo</a>
+<br>
 ## TECH STACK
 <pre>
 NODEJS
@@ -15,7 +18,7 @@ Nodemailer
 
 
 <br>
-<a href="https://pure-badlands-65740.herokuapp.com/">Live Demo</a>
+
 <hr>
 
 ## FEATURES
